@@ -400,7 +400,7 @@ footer {
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
 /* ── RESPONSIVE ── */
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   #hero { grid-template-columns: 1fr; min-height: auto; }
   .hero-right { height: 50vw; }
   .proses-grid { grid-template-columns: repeat(2, 1fr); }
@@ -408,4 +408,234 @@ footer {
   #kontak { grid-template-columns: 1fr; gap: 3rem; }
   .keunggulan-grid { grid-template-columns: 1fr; }
   nav ul { display: none; }
+} */
+
+/* ===============================
+   RESPONSIVE IMPROVEMENT VERSION
+   =============================== */
+
+/* ---------- LARGE DESKTOP ---------- */
+@media (max-width: 1200px) {
+  section { padding: 6rem 6%; }
+
+  .hero-left { padding: 5rem 6%; }
+
+  .cap-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .proses-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ---------- TABLET LANDSCAPE ---------- */
+@media (max-width: 992px) {
+
+  nav {
+    padding: 1rem 6%;
+  }
+
+  #hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-left {
+    padding: 6rem 6% 4rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-desc {
+    max-width: 100%;
+  }
+
+  .hero-stats {
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-right {
+    height: 60vw;
+  }
+
+  .hero-badge {
+    left: 1.5rem;
+    bottom: 1.5rem;
+  }
+
+  .keunggulan-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cap-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #kontak {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- TABLET PORTRAIT ---------- */
+@media (max-width: 768px) {
+
+  section {
+    padding: 5rem 6%;
+  }
+
+  .hero-title {
+    font-size: clamp(2.4rem, 6vw, 3.2rem);
+  }
+
+  .hero-stats {
+    gap: 1.5rem;
+  }
+
+  .stat-num {
+    font-size: 1.6rem;
+  }
+
+  .marquee-track {
+    gap: 2rem;
+  }
+
+  .proses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cap-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cert-row {
+    gap: 3rem;
+  }
+
+  .testi-quote {
+    font-size: 1.6rem;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 480px) {
+
+  nav {
+    padding: .8rem 5%;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  section {
+    padding: 4rem 5%;
+  }
+
+  .hero-left {
+    padding: 5rem 5% 3rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-desc {
+    font-size: .85rem;
+  }
+
+  .btn-primary {
+    padding: .8rem 1.4rem;
+    font-size: .75rem;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  .hero-right {
+    height: 65vw;
+  }
+
+  .hero-badge {
+    position: static;
+    margin: 1.5rem auto 0;
+  }
+
+  .marquee-item {
+    font-size: .8rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .kc-num {
+    font-size: 2.5rem;
+  }
+
+  .cap-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-circle {
+    width: 65px;
+    height: 65px;
+    font-size: .65rem;
+  }
+
+  .testi-quote {
+    font-size: 1.3rem;
+  }
+
+  .faq-q {
+    font-size: .85rem;
+  }
+
+  .faq-a {
+    font-size: .8rem;
+  }
+
+  .contact-desc {
+    font-size: .85rem;
+  }
+
+  .btn-submit {
+    width: 100%;
+    text-align: center;
+  }
+
+  .wa-btn {
+    width: 46px;
+    height: 46px;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .wa-btn svg {
+    width: 22px;
+    height: 22px;
+  }
 }
